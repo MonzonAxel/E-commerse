@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping cart</title>
+</head>
+<body>
+    <aside>
+        <header>
+            <h1>Shopping cart</h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="product-category">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Clothes for sale
+                </li>
+                <li class="product-category" id="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="cart.html">Carrito</a><span id="numberCart">0</span>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <article class="product-container">
+                <p class="hidden">The cart is empty</p>
+                <div class="product-sale">
+                    <img src="" class="product-img" alt="Imagen a insertar">
+                    <p>Nombre articulo</p>
+                    <div>
+                        <p>Cantidad</p>
+                        <p>1</p>
+                    </div>
+                    <div>
+                        <p>Precio</p>
+                        <p>1000</p>
+                    </div>
+                    <div>
+                        <p>Subtotal</p>
+                        <p>1000</p>
+                    </div>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+                <div class="cart-sale">
+                    <button class="cart-empty">Vaciar carrito</button>
+                    <div class="cart-totalPrice">
+                        <p class="cart-total">Total</p>
+                        <span class="cart-price">1000</span>
+                    </div>
+                    <button class="cart-buy">Comprar</button>
+                </div>
+            </article>
+        </main>
+    </aside>  
+    <script src="https://kit.fontawesome.com/f3455718a3.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
