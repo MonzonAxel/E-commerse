@@ -9,3 +9,183 @@ ul,
 li {
     list-style:none
 }
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: yellow;
+}
+
+/* NAVBAR */
+
+.aside{
+    padding: 2rem;
+    padding-right: 0;
+    height: 100vh;
+    min-width: 175px;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    padding-bottom: 4rem;
+    font-weight: 900;
+}
+
+i{
+    margin-right: 1.5rem;
+}
+
+.product-category{
+    margin-bottom: 2rem;
+    padding: 0.85rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.active{
+    background-color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+
+#carrito{
+    margin-top: 4rem;
+}
+
+#numberCart {
+    margin-left: 0.85rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+}
+
+/* MAIN CONTAINER */
+
+.main{
+    padding: 2rem;
+    padding-left: 0;
+    border-radius: 1rem;
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.product-title{
+    margin-left: 2rem;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+    gap: 1rem;
+    background-color: white;
+}
+
+.product-img{
+    max-width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.product-details{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    top: -1rem;
+    background-color: yellow;
+    border-radius: 1rem;
+    padding: 0.5rem;  
+}
+
+.product-name{
+    font-weight: 600;
+}
+
+.product-add{
+    border: 3px solid white;
+    background-color: white;
+    padding: 0.4rem;
+    cursor: pointer;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.product-add:hover, .cart-buy:hover, .cart-empty:hover{
+    background-color: whitesmoke;
+}
+
+/* CART */
+
+.cart-container{
+    margin-left: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: space-evenly;
+}
+
+.cart-text{
+    margin-bottom: 1rem;
+}
+.cart-sale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cart-img{
+    width: 8rem;
+    border-radius: 1rem;
+}
+
+.cart-sell{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-empty, .cart-buy{
+    border: 3px solid white;
+    background-color: yellow;
+    padding: 0.4rem;
+    cursor: pointer;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cart-totalPrice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-total{
+    margin-right: 2rem;
+}
+
+.fa-solid:hover{
+    color: red;
+    cursor:pointer;
+}

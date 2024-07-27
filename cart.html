@@ -7,55 +7,56 @@
     <title>Shopping cart</title>
 </head>
 <body>
-    <aside>
-        <header>
-            <h1>Shopping cart</h1>
-        </header>
-        <nav>
-            <ul>
-                <li class="product-category">
-                    <a href="index.html">
-                        <i class="fa-solid fa-arrow-left"></i>
-                        Clothes for sale
-                    </a>
-                </li>
-                <li class="product-category" id="carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    Carrito<span id="numberCart">0</span>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <article class="product-container">
-                <p class="hidden">The cart is empty</p>
-                <div class="product-sale">
-                    <img src="" class="product-img" alt="Imagen a insertar">
+    <div class="wrapper">
+        <aside class="aside">
+            <header class="logo">
+                <h1>Shopping cart</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li class="product-category">
+                        <a href="index.html">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Monz Shop
+                        </a>
+                    </li>
+                    <li class="product-category active" id="carrito">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Carrito<span id="numberCart">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main">
+            <article class="cart-container">
+                <p class="cart-text hidden">The cart is empty</p>
+                <div class="cart-sale">
+                    <img src="img/pantalones/02.jpg" class="product-img cart-img" alt="Imagen a insertar">
                     <p>Nombre articulo</p>
-                    <div>
-                        <p>Cantidad</p>
+                    <div class="cart-cant">
+                        <small>Cantidad</small>
                         <p>1</p>
                     </div>
-                    <div>
-                        <p>Precio</p>
+                    <div class="cart-price">
+                        <small>Precio</small>
                         <p>1000</p>
                     </div>
-                    <div>
-                        <p>Subtotal</p>
+                    <div class="cart-subtotal">
+                        <small>Subtotal</small>
                         <p>1000</p>
                     </div>
-                    <i class="fa-solid fa-trash"></i>
+                    <i class="fa-solid fa-trash"></i>  
                 </div>
-                <div class="cart-sale">
+
+                <div class="cart-sell">
                     <button class="cart-empty">Vaciar carrito</button>
                     <div class="cart-totalPrice">
-                        <p class="cart-total">Total</p>
-                        <span class="cart-price">1000</span>
+                        <p class="cart-total">Total:<span class="cart-total.">$1000</span><button class="cart-buy">Comprar</button></p>
                     </div>
-                    <button class="cart-buy">Comprar</button>
                 </div>
             </article>
         </main>
-    </aside>  
+    </div>  
     <script src="https://kit.fontawesome.com/f3455718a3.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

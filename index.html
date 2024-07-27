@@ -7,41 +7,91 @@
     <title>E-commerse</title>
 </head>
 <body>
-    <aside>
-        <header>
-            <h1>Clothes for sale</h1>
-        </header>
-        <nav>
-            <ul>
-                <li class="product-category" id="producto">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    Productos
-                </li>
-                <li class="product-category" id="abrigo">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    Abrigos
-                </li>
-                <li class="product-category" id="remera">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    Remeras
-                </li>
-                <li class="product-category" id="pantalon">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    Pantalones
-                </li>
-                <li class="product-category" id="carrito">
-                    <a href="cart.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Carrito<span id="numberCart">0</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <main>
+    <div class="wrapper">
+        <aside class="aside">
+            <header class="logo">
+                <h1>Monzon Shop</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li class="product-category active" id="producto">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Productos
+                    </li>
+                    <li class="product-category" id="abrigos">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Abrigos
+                    </li>
+                    <li class="product-category" id="camisetas">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Remeras
+                    </li>
+                    <li class="product-category" id="pantalones">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Pantalones
+                    </li>
+                    <li class="product-category" id="carrito">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Carrito<span id="numberCart">5</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main">
+            <h2 class="product-title">Productos</h2>
             <article class="product-container">
-                <h2 class="product-title">Productos</h2>
                 <div class="product-sale">
-                    <img src="" class="product-img" alt="Imagen a insertar">
+                    <img src="img/abrigos/01.jpg" class="product-img" alt="Imagen a insertar">
+                    <div class="product-details">
+                        <p class="product-name">Abrigo</p>
+                        <p class="product-price">$1500</p>
+                        <button class="product-add">Agregar</button>
+                    </div>
+                </div>
+                <div class="product-sale">
+                    <img src="img/abrigos/02.jpg" class="product-img" alt="Imagen a insertar">
+                    <div class="product-details">
+                        <p class="product-name">Abrigo</p>
+                        <p class="product-price">$1500</p>
+                        <button class="product-add">Agregar</button>
+                    </div>
+                </div>
+                <div class="product-sale">
+                    <img src="img/abrigos/03.jpg" class="product-img" alt="Imagen a insertar">
+                    <div class="product-details">
+                        <p class="product-name">Abrigo</p>
+                        <p class="product-price">$1500</p>
+                        <button class="product-add">Agregar</button>
+                    </div>
+                </div>
+                <div class="product-sale">
+                    <img src="img/abrigos/04.jpg" class="product-img" alt="Imagen a insertar">
+                    <div class="product-details">
+                        <p class="product-name">Abrigo</p>
+                        <p class="product-price">$1500</p>
+                        <button class="product-add">Agregar</button>
+                    </div>
+                </div>
+                <div class="product-sale">
+                    <img src="img/camisetas/05.jpg" class="product-img" alt="Imagen a insertar">
+                    <div class="product-details">
+                        <p class="product-name">Abrigo</p>
+                        <p class="product-price">$1500</p>
+                        <button class="product-add">Agregar</button>
+                    </div>
+                </div>
+                <div class="product-sale">
+                    <img src="img/camisetas/06.jpg" class="product-img" alt="Imagen a insertar">
+                    <div class="product-details">
+                        <p class="product-name">Abrigo</p>
+                        <p class="product-price">$1500</p>
+                        <button class="product-add">Agregar</button>
+                    </div>
+                </div>
+                <div class="product-sale">
+                    <img src="img/camisetas/08.jpg" class="product-img" alt="Imagen a insertar">
                     <div class="product-details">
                         <p class="product-name">Abrigo</p>
                         <p class="product-price">$1500</p>
@@ -50,7 +100,7 @@
                 </div>
             </article>
         </main>
-    </aside>  
+    </div>
    
     <script src="https://kit.fontawesome.com/f3455718a3.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
