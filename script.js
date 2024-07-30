@@ -249,6 +249,7 @@ const selectCart = (productAdd) =>{
         list.push(cart);
        }
        updateNumber(list)
+       localStorage.setItem("listLocal", JSON.stringify(list))
     
     })
    })
