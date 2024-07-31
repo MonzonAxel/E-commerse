@@ -189,7 +189,17 @@ const numberCart = document.querySelector("#numberCart")
 const logo = document.querySelector(".logo-name")
 const cart = document.querySelector("#Carrito")
 
-const list = []
+
+let list
+
+let listLS = localStorage.getItem("cartList")
+
+if(listLS && listLS.length >= 1){   
+    list = JSON.parse(listLS)
+    updateNumber(list)
+}else{
+    list = []
+}
 
 const display = (productList) =>{
 
@@ -249,13 +259,13 @@ const selectCart = (productAdd) =>{
         list.push(cart);
        }
        updateNumber(list)
-       localStorage.setItem("listLocal", JSON.stringify(list))
+       localStorage.setItem("cartList", JSON.stringify(list))
     
     })
    })
 }
 
-const updateNumber = (list) => {
+function updateNumber(list){
     let max = 0
     const cantidad = list.map(res => res.cantidad)
     for ( let cantidades of cantidad){

@@ -28,36 +28,21 @@
             </nav>
         </aside>
         <main class="main">
+            <p class="cart-without hidden incomplete">No hay productos en el carrito</p>
             <article class="cart-container">
-                
-                <div class="cart-sale">
-                    <img src="img/pantalones/02.jpg" class="product-img cart-img" alt="Imagen a insertar">
-                    <p>Nombre articulo</p>
-                    <div class="cart-cant">
-                        <small>Cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="cart-price">
-                        <small>Precio</small>
-                        <p>1000</p>
-                    </div>
-                    <div class="cart-subtotal">
-                        <small>Subtotal</small>
-                        <p>1000</p>
-                    </div>
-                    <i class="fa-solid fa-trash"></i>  
-                </div>
-
-                <div class="cart-sell">
-                    <button class="cart-empty">Vaciar carrito</button>
-                    <div class="cart-totalPrice">
-                        <p class="cart-total">Total:<span class="cart-total.">$1000</span><button class="cart-buy">Comprar</button></p>
-                    </div>
-                </div>
+                <!-- Add in JS -->
+            
             </article>
+            <div class="cart-sell hidden">
+                <button class="cart-empty">Vaciar carrito</button>
+                <div class="cart-totalPrice">
+                    <p class="cart-total">Total:<span class="total">$1000</span><button class="cart-buy">Comprar</button></p>
+                </div>
+            </div>
+            <p class="cart-without hidden complete">Gracias por su compra</p>
         </main>
     </div>  
     <script src="https://kit.fontawesome.com/f3455718a3.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
