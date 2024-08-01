@@ -31,7 +31,7 @@ const displayCart = (listLS) => {
         const div = document.createElement("div")
         div.classList.add("cart-sale")
         div.innerHTML = `<img src="${res.imagen}" class="product-img cart-img" alt="Imagen a insertar">
-                        <p>${res.titulo}</p>
+                        <p class="cart-title">${res.titulo}</p>
                         <div class="cart-cant">
                             <small>Cantidad</small>
                             <p>${res.cantidad}</p>

@@ -9,9 +9,13 @@
 <body>
     <div class="wrapper">
         <div class="menu-mobile hidden">
+            <h1 class="logo-mobile">Monzon Shop</h1>
             <i class="fa-solid fa-bars"></i>
         </div>
         <aside class="aside">
+            <button class="close-menu hidden" id="close-menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
             <header class="logo">
                 <h1 class="logo-name">Shopping cart</h1>
             </header>
@@ -37,7 +41,7 @@
             
             </article>
             <div class="cart-sell hidden">
-                <button class="cart-empty">Vaciar carrito</button>
+                <button class="cart-empty">Vaciar</button>
                 <div class="cart-totalPrice">
                     <p class="cart-total">Total:<span class="total">$1000</span><button class="cart-buy">Comprar</button></p>
                 </div>
@@ -47,5 +51,6 @@
     </div>  
     <script src="https://kit.fontawesome.com/f3455718a3.js" crossorigin="anonymous"></script>
     <script src="./js/cart.js"></script>
+    <script src="/js/menu.js"></script>
 </body>
 </html>
