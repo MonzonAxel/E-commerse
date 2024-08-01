@@ -86,10 +86,26 @@ const deleteElement = (trash) => {
    trash.forEach(res => {
     const id = res.id
     res.addEventListener("click", () => {
-        const index = listLS.findIndex( f => f.id === id)
 
+        Toastify({
+            text: "Producto eliminado",
+            duration: 1000,
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true, 
+            style: {
+              background: "linear-gradient(90deg, #bf1e1e 3%, #b71a23 30%, #f20404 100%)",
+            },
+            offset: {
+                x: "1rem", 
+                y: "1.5rem" 
+            },
+            onClick: function(){} 
+          }).showToast();
+
+        const index = listLS.findIndex( f => f.id === id)
         listLS.splice(index,1)
-       
+    
         displayCart(listLS)
 
         localStorage.setItem("cartList",JSON.stringify(listLS))
@@ -99,24 +115,55 @@ const deleteElement = (trash) => {
 }
 
 const complete = () => {
-    cartActions.classList.add("hidden")
-    cartContainer.classList.add("hidden")
-    cartComplete.classList.remove("hidden")
 
-    localStorage.removeItem("cartList")
+    Swal.fire({
+        title: "Comprar producto",
+        text:"¿Desea comprar realizar la compra de su producto?",
+        icon:"question",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si",
+        cancelButtonText: "No",
+      }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: "Compra realiza con exito",
+                icon: "success"
+            })
 
-    numberCart.textContent = 0
+            cartActions.classList.add("hidden")
+            cartContainer.classList.add("hidden")
+            cartComplete.classList.remove("hidden")
+
+            localStorage.removeItem("cartList")
+
+            numberCart.textContent = 0
+            
+        }
+      });
+
 }
 
 const empty = () =>{
-    cartIncomplete.classList.remove("hidden")
-    cartActions.classList.add("hidden")
-    cartContainer.classList.add("hidden")
-    cartComplete.classList.add("hidden")
-
-    localStorage.removeItem("cartList")
-
-    numberCart.textContent = 0
+    Swal.fire({
+        title: "¿Estas seguro de vaciar el carrito?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si",
+        cancelButtonText: "No",
+      }).then((result) => {
+        if (result.isConfirmed) {
+            cartIncomplete.classList.remove("hidden")
+            cartActions.classList.add("hidden")
+            cartContainer.classList.add("hidden")
+            cartComplete.classList.add("hidden")
+            localStorage.removeItem("cartList")
+            numberCart.textContent = 0
+        }
+      });
 }
 
 cartBuy.addEventListener("click", complete)

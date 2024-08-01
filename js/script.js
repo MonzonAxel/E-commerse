@@ -74,6 +74,23 @@ li.forEach(res =>{
 const selectCart = (productAdd) =>{
    productAdd.forEach(res => {
     res.addEventListener("click", (e) => {
+
+        Toastify({
+            text: "Producto agregado",
+            duration: 1000,
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true, 
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            offset: {
+                x: "1rem", 
+                y: "1.5rem" 
+            },
+            onClick: function(){} 
+          }).showToast();
+
        const value = e.currentTarget.id
        const travelList = list.some(res => res.id === value)
        
