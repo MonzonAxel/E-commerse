@@ -38,7 +38,7 @@ const displayCart = (listLS) => {
                         </div>
                         <div class="cart-price">
                             <small>Precio</small>
-                            <p>${res.precio}</p>
+                            <p>$${res.precio}</p>
                         </div>
                         <div class="cart-subtotal">
                             <small>Subtotal</small>

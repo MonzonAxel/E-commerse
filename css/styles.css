@@ -135,7 +135,7 @@ i{
 }
 
 .product-add:hover{
-    background-color: whitesmoke;
+    background-color: grey;
 }
 
 /* CART */
@@ -219,3 +219,16 @@ i{
 .hidden{
     display: none;
 }
+
+@media (width <= 975px){
+    .product-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(width <= 775px){
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
